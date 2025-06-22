@@ -3,8 +3,8 @@
 	"theme": "maple",
 	"name": "Starter Kit",
 	"colors": {
-		"primary": "#4c4a42",
-		"light": "#fff",
+		"primary": "#9c9586",
+		"light": "#9c9586",
 		"dark": "#4c4a42"
 	},
 	"favicon": "/favicon.svg",
@@ -30,15 +30,14 @@
 						]
 					},
 					{
-						"group": "API Documentation",
-						"pages": ["api-reference/introduction"]
-					},
-					{
-						"group": "Endpoint Examples",
+						"group": "Workflows",
 						"pages": [
-							"api-reference/endpoint/get",
-							"api-reference/endpoint/create",
-							"api-reference/endpoint/delete"
+							"essentials/markdown",
+							"essentials/code",
+							"essentials/images",
+							"essentials/settings",
+							"essentials/navigation",
+							"essentials/reusable-snippets"
 						]
 					}
 				]
@@ -46,11 +45,6 @@
 		],
 		"global": {
 			"anchors": [
-				{
-					"anchor": "Documentation",
-					"href": "https://mintlify.com/docs",
-					"icon": "book-open-cover"
-				},
 				{
 					"anchor": "Community",
 					"href": "https://mintlify.com/community",
