@@ -27,10 +27,10 @@
 							"essentials/projects",
 							"essentials/massing",
 							"essentials/layout",
-							"essentials/policies",
-							"essentials/datasets",
+							"essentials/finances",
 							"essentials/entitlements",
-							"essentials/finances"
+							"essentials/policies",
+							"essentials/datasets"
 						]
 					},
 					{
