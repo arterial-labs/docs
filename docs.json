@@ -7,6 +7,9 @@
 		"light": "#9c9586",
 		"dark": "#4c4a42"
 	},
+	"icons": {
+		"library": "lucide"
+	},
 	"favicon": "/favicon.svg",
 	"navigation": {
 		"anchors": [
@@ -21,23 +24,23 @@
 					{
 						"group": "Essentials",
 						"pages": [
-							"essentials/markdown",
-							"essentials/code",
-							"essentials/images",
-							"essentials/settings",
-							"essentials/navigation",
-							"essentials/reusable-snippets"
+							"essentials/projects",
+							"essentials/massing",
+							"essentials/layout",
+							"essentials/policies",
+							"essentials/datasets",
+							"essentials/entitlements",
+							"essentials/finances"
 						]
 					},
 					{
-						"group": "Workflows",
+						"group": "Techniques",
 						"pages": [
-							"essentials/markdown",
-							"essentials/code",
-							"essentials/images",
-							"essentials/settings",
-							"essentials/navigation",
-							"essentials/reusable-snippets"
+							"workflows/parcel-search",
+							"workflows/simulation",
+							"workflows/exporting",
+							"workflows/entitlement",
+							"workflows/land-economics"
 						]
 					}
 				]
