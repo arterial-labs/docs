@@ -1,4 +1,50 @@
 ---
-title: Parcel Searching
+title: Explore Mode
 icon: land-plot
+description: "Use Arterial's algorithms in reverse to find criteria-fitting parcels"
 ---
+
+Arterial's Explore Mode allows you to leverage our simulation features _in reverse_: instead of simulating a parcel to find out what can be done, you can find parcels that fit specific (abstract) criteria.
+
+Explore mode is available from the [Explore page](https://arterial.design/app/explore) on your Arterial dashboard.
+
+## Overlays
+
+Similar to the [Datasets](/essentials/datasets) page, overlays allow you to visualize and filter actual dataset values on the map. You can use the selector in the top-right corner of the page to choose which dataset to overlay; the map will then update to show the corresponding values.
+
+## Parcel Searching
+
+Explore Mode includes powerful mechanics to help you locate parcels that fit specific criteria. You can switch into Parcel Mode by clicking the <Icon icon="land-plot" color="#FFF" /> **Parcel View** toggle on the left-hand side of the map.
+
+<Info>
+	Parcel Mode allows you to select and simulate parcels on the fly instead of
+	creating a project from the dashboard.
+</Info>
+
+To filter parcels, you can use the <Icon icon="filter" color="#FFF" /> **Filter Parcels** button in the top-left corner of the map. This will open a modal with a prompt for a set of clauses to filter by.
+
+### Precedence Analysis
+
+You can quickly filter parcels out based on their policy compliance using the datasets under **Precedence**. These datasets are linked to Arterial's [policy algorithms](/essentials/policies), and will find all the clusters of parcels where the prompted criteria are met.
+
+You can use the _Planning Arguments_ key to filter parcels based on their ability to have variances sought for them_Arterial will conduct HBU studies to search for the places with the highest probability of success.
+
+<Info>
+	Generally, filtering on Planning Arguments is best used by describing the type
+	of project you'd like to build. More keys are available (such as policy
+	references and site context) for more specific searches.
+</Info>
+
+### Parcel Geometry
+
+You can also filter on the parcels themselves, using the **Parcel Geometry** key. Currently, we support filtering on _area_ and _frontage_ of parcels—the most common types of geometric constraints in land development.
+
+### Massing Templates
+
+In addition, you can quickly filter parcels based on geometric and policy constraints by using the **Template Compatibility** key. You'll be able to select from a list of Arterial (and your organization's) pre-defined templates—Arterial will run through its policy algorithms in the background.
+
+### MLS criteria
+
+Arterial has a constant stream of land economics information in addition to all of its policy data; both MLS Leasing and Sales information can be used to filter parcels. You can use the **MLS Leasing** and **MLS Sales** keys to take advantage.
+
+Arterial will average the values of commonly-used keys (such as the latest price) and apply the forecasted values across all parcels on the map; you'll be able to filter based on these predicted scores.
