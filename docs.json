@@ -40,7 +40,7 @@
 							"workflows/simulation",
 							"workflows/exporting",
 							"workflows/entitlement",
-							"workflows/land-economics"
+							"workflows/upzoning"
 						]
 					}
 				]
@@ -69,13 +69,13 @@
 		"links": [
 			{
 				"label": "Support",
-				"href": "mailto:hi@mintlify.com"
+				"href": "mailto:hq@arterial.design"
 			}
 		],
 		"primary": {
 			"type": "button",
 			"label": "Dashboard",
-			"href": "https://dashboard.mintlify.com"
+			"href": "https://arterial.design/app/overview"
 		}
 	},
 	"footer": {
@@ -84,5 +84,9 @@
 			"github": "https://github.com/mintlify",
 			"linkedin": "https://www.linkedin.com/company/mintsearch"
 		}
+	},
+	"appearance": {
+		"default": "dark",
+		"strict": true
 	}
 }
