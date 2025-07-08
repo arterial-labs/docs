@@ -4,29 +4,115 @@ icon: "proportions"
 description: "Internal simulations of massings"
 ---
 
+Arterial's layout simulation features allow you to quickly view potential floor plans based on unit mixes, and optimize your building for revenue.
+
+Layout Simulations consist of:
+
+- **Amenity Spaces**: the egress, amenity spaces, and other non-residential areas that take up space on a floor plate.
+- **Unit Mix**: the overall selection of units (either by dimensions or area) that Arterial will use to generate floor plate possibilities.
+
+From a unit mix simulation, Arterial can analyse:
+
+- **Financial Projections**: the estimated revenue (rent or sales) based on unit mixes and MLS data—alongside a suite of other pro-forma calculations.
+- **Construction Costing**: the geometry of a filled-out floor plate allows Arterial to compare material costs based on walls.
+- **Unit Comparables**: similar units in similar buildings in the area that can inform your final financing decisions.
+
 ## Quickstart
 
+Learn to quickly set up an optimal layout configuration & analyze the results.
+
 <Steps titleSize="h3">
-<Step title="Template Selection">
+<Step title="Massing Setup">
+
+Layouts are based on a massing typology; units cannot be allocated without a building envelope. See [Massing](/essentials/massing) for more information on how to create a massing.
 
 </Step>
 
 <Step title="Unit & Layout Setup">
 
+The massing template you selected will usually have a pre-defined set of amenity spaces (in cases where you need to add in your own, see the amenity space [design guidelines](#amenity-spaces) for more information); all that's left is to select the unit types that you'd like to simulate.
+
+You can select either area-based units or dimension-based units (but not both!) using the <Icon icon="plus" color="#FFF" /> **Add Unit** button; see the [layout type guidelines](#layout-types) for more information on the differences between these two types.
+
 </Step>
 
 <Step title="Layout Simulation">
+
+Once you've added your units, you can click on <Icon icon="dollar-sign" color="#FFF" /> **Optimize Unit Mix** to generate a set of floor plates based on the selected units.
+
+Arterial will use financial data to determine the best possible counts for each of the units—you can see the generated results live in the preview.
+
+</Step>
+
+<Step title="Analysis">
+
+Once the simulation is complete, Arterial will source financial information from MLS and our material modelling—you can find the results in the <Icon icon="piggy-bank" color="#FFF" /> **Finances** tab in the sidebar or the bottom-left legend.
+
 </Step>
 </Steps>
+
+## Unit Types
+
+The algorithm that Arterial uses to generate floor plates depends on the type of selected units, and will generate different types of layouts accordingly. The functionality of simulation functions the same with both types; Arterial will intelligently select the best algorithm.
+
+### Area-based
+
+<Info>
+	Area-based units will create floor plates that are optimized to fit as many
+	units as possible, and will produce more flexible layouts.
+</Info>
+
+When using area-based units, Arterial will attempt to fill the entire floor plate with the selected units—in most cases, this will result in an irregular floor plate.
+
+Area units are useful to understand the mathematical _maximum_ that can be allocated to the building, and can be used to assess the maximum revenue potential faster than dimension-based units.
+
+### Dimension-based
+
+<Info>
+	Dimension-based units will always lay units out in rows, and will produce more
+	restrictive layouts—they are useful for assessing constructibility.
+</Info>
+
+Dimension-based units will fill in the gaps formed by amenity spaces, and reflect how construction will actually work in practice. They help understand the real-world implications and constraints of a building—and can also analyze MLI Select & financing options.
+
+### Value ranges
+
+Both dimensional and area-based units can have their values (area, length, and width) set to a range; Arterial will automatically scale each units to fit the floor plate, optimizing for the maximum revenue possible.
 
 ## Layout Design
 
 ### Amenity Spaces
 
+Each amenity space is defined as either an _Egress Space_ or an _Amenity Space_; amenity spaces (i.e. corridors) are used to analyze where to put units—every unit on a floor plate must touch an amenity space and a window. Egress spaces simply cut out sections of the floor plates.
+
+You can customize the size and placement of the amenity spaces by setting their constraint values in the **Reserved Space** section; these values will ensure a constant fit for the selected floor plates. To center along specific walls, you can use the <Icon icon="align-center-horizontal" color="#FFF" /> and <Icon icon="align-center-vertical" color="#FFF" /> buttons to align the amenity spaces.
+
 ### Unit Selection
 
-## Layout Types
+## Next Steps
 
-### Area-based
+Layout Simulations can unlock higher-order value for your simulations on Arterial.
 
-### Dimension-based
+<CardGroup cols={2}>
+	<Card
+		title="Analyze Financial Projections"
+		icon="piggy-bank"
+		href="https://mintlify.com/docs/settings/global"
+	>
+		Customize your docs to your company's colors and brands
+	</Card>
+	<Card
+		title="Fine-tune Unit Simulations"
+		icon="brain"
+		href="https://mintlify.com/docs/api-playground/openapi"
+	>
+		Automatically generate endpoints from an OpenAPI spec
+	</Card>
+	<Card
+		title="Export Information"
+		icon="cloud-download"
+		href="https://mintlify.com/docs/components/accordion"
+	>
+		Build interactive features and designs to guide your users
+	</Card>
+</CardGroup>
