@@ -4,29 +4,42 @@ icon: "piggy-bank"
 description: "Internal simulations of massings"
 ---
 
+Arterial's financial integrations allow you to quickly assess the economic viability of specific massing designs.
+
 ## Quickstart
 
 <Steps titleSize="h3">
-<Step title="Template Selection">
+<Step title="Massing Setup">
+
+Financial simulations are based on both massing typologies and unit types; the typology defines the construction costing's initial estimates, and unit types define the revenue and financial projections.
+
+See [Massing](/essentials/massing) for more information on how to create a massing.
 
 </Step>
 
-<Step title="Unit & Layout Setup">
+<Step title="Analysis">
 
-</Step>
+Once a massing & layout is created, navigate to the <Icon icon="piggy-bank" color="#FFF" /> **Finances** tab in the sidebar or in the bottom-left legend of the massing page to view the projections. You can switch between the <Icon icon="clock" color="#FFF" /> **Leases** and <Icon icon="dollar-sign" color="#FFF" /> **Sales** tabs to view the corresponding simulations based on MLS data.
 
-<Step title="Layout Simulation">
 </Step>
 </Steps>
 
-## Layout Design
+## Supported Information
 
-### Amenity Spaces
+### Customizable Projections
 
-### Unit Selection
+Arterial calculates financial projections based on sources of truth in unit commparables, but also based on your custom inputs (e.g. cap rate, expenses, and vacancy rates). These sliders are customizable in the <Icon icon="piggy-bank" color="#FFF" /> **Finances** tab.
 
-## Layout Types
+### Unit Types
 
-### Area-based
+Each unit type allocated from a massing's [Layout Simulation](/essentials/layout) will have a corresponding set of financial projections based on MLS data; Arterial will source the most relevant units and average their values (e.g. latest rent/sale price) to provide a useful set of estimates.
 
-### Dimension-based
+In addition, Arterial can suggest the expected number of bathrooms and bedrooms based on these comparables, alongside the price per square foot. To view the actual comparables, scroll down to the **Similar Units** section; you can view the full details of each on a map or on a relevant MLS listing site.
+
+### Construction Costing
+
+Arterial's construction costing is built on proprietary material modelling, and is based on the building envelope for a specific massing.
+
+The typology is first sorted into a known category (e.g. high-rise, mid-rise, etc.), and further categorized based on industry standards—when Arterial has enough data to come up with a price per square foot, it will use the calculated GFA to provide a total cost estimate.
+
+You can view the calculated construction costing breakdown in the legend or the <Icon icon="piggy-bank" color="#FFF" /> **Finances** tab.
