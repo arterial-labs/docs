@@ -1,3 +1,43 @@
 ---
 title: Simulation Settings
+icon: brain
+description: "Learn to quickly update your layouts"
 ---
+
+[Layouts and Units](/essentials/layout) are a powerful system to quickly visualize potential floor plate layouts given a set of units within a massing; within Arterial, they help analyze potential financial projections, construction costs, and unit comparables.
+
+In addition to the basic settings, Arterial comes with a set of features to fine-tune your simulations according to architectural specifications and more advanced calculations.
+
+## Selecting Units
+
+All simulations are based on a set of units of your choosing; these can be selected using the <Icon icon="plus" color="#FFF" /> **Add Unit** button in the <Icon icon="proportions" color="#FFF" /> **Layout** tab of a massing.
+
+See [Unit Types](/essentials/layout#unit-types) for more information on the different types of units that can be selected; each type has a different algorithm for generating floor plates, and can be constrained using different parameters.
+
+Each unit type reuqires a count to simulate; when simulating layouts, Arterial will allocate as many units as possible based on the geometry. You may increase the count by expressing it as a percentage of the total GLA as well.
+
+Arterial also requires a floor plate-level allocation of each unit type; this allows simulations to be run at a floor plate level, rather than at a building level—giving you the most accurate results possible.
+
+## Optimizing Units
+
+To skip the fine-tuning and floor plate allocation steps, you can use Arterial to automatically simulate the best possible case for your building, by clicking <Icon icon="dollar-sign" color="#FFF" /> **Optimize Unit Mix** in the **Simulation Settings** section after adding your units.
+
+Arterial will look up the similar buildings nearby and calculate the unit mix (the counts for each unit type) that would yield the highest revenue. It will then update the unit counts and floor plate allocation, and automatically simulate the floor plates based on them.
+
+### Weighting units
+
+If you'd like to prioritize certain units in the final allocation above their weighting, you can use the <Icon icon="star" color="#FFF"/> toggle next to each unit type to set it as a priority.
+
+## Distributing Units
+
+To automatically allocate the units to the floor plates, you can use the <Icon icon="plus" color="#FFF" /> **Distribute Units** button in the **Simulation Settings** section. This will distribute the units across the floor plates without affecting the gross unit mix you've selected (unlike the [optimization functionality](#optimizing-units)).
+
+### Equalizing
+
+In some cases (for instance, doing a layout for a 5-over-1), it's useful to copy the base floor plate to all of the upper floors, so that the construction potential is consistent across the building. To do this, you can hit <Icon icon="equal" color="#FFF" /> **Equalize Floor Plates**.
+
+## Floor Plate Settings
+
+The allocation of units can be further customized at the floor plate level using the sliders for each unit type.
+
+To clear the floor plate of all units and prevent units from being allocated during simulation, you can use the <Icon icon="circle-off" color="#FFF" /> _Clear Unit_ toggle; to prevent [unit distribution](#distributing-units) from affecting the floor plate, you can use the <Icon icon="lock" color="#FFF" /> _Lock Floor Plate_ toggle.
