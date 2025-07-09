@@ -19,7 +19,7 @@
 				"groups": [
 					{
 						"group": "Get Started",
-						"pages": ["introduction", "quickstart", "development"]
+						"pages": ["introduction", "quickstart"]
 					},
 					{
 						"group": "Essentials",
@@ -50,13 +50,8 @@
 			"anchors": [
 				{
 					"anchor": "Community",
-					"href": "https://mintlify.com/community",
+					"href": "mailto:hq@arterial.design?subject=[Community Request]: <Insert Firm Name Here>&body=Hi there,%0D%0A%0D%0AI'm interested in joining the Arterial community for my organization. %0D%0A%0D%0ACould you please provide more information about:%0D%0A- Community access and features%0D%0A- Collaboration opportunities%0D%0A- Knowledge sharing resources%0D%0A%0D%0AThank you for your time, and I look forward to hearing from you.%0D%0A%0D%0ABest regards,%0D%0A%0D%0A[Your Name]",
 					"icon": "slack"
-				},
-				{
-					"anchor": "Blog",
-					"href": "https://mintlify.com/blog",
-					"icon": "newspaper"
 				}
 			]
 		}
