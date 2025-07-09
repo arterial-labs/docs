@@ -26,6 +26,7 @@ See [Projects](/essentials/projects) for more information on how to create a pro
 	></iframe>
 </Frame>
 </Step>
+
 <Step title="Dataset Overview">
 
 You can view all the datasets Arterial has collected in the <Icon icon="layers-2" color="#FFF" /> **Datasets** tab in the sidebar.
@@ -40,12 +41,10 @@ You can view all the datasets Arterial has collected in the <Icon icon="layers-2
 </Frame>
 
 </Step>
-<Step title="Interpretations">
 
-<Info>
-	**Interpretations** allow you to gain a cursory understanding of regulations
-	by
-</Info>
+<Step title="Filtering">
+
+You can step through the datasets and filter them by a set of properties from the legend in the bottom-right corner. Each of the highlighted properties can be clicked to exclusively show those values—the colour corresponds to the colour of the points or polygons on the map.
 
 <Frame caption="All details of ">
 	<iframe
@@ -55,6 +54,7 @@ You can view all the datasets Arterial has collected in the <Icon icon="layers-2
 		className="w-full aspect-video"
 	></iframe>
 </Frame>
+
 </Step>
 </Steps>
 
@@ -64,7 +64,9 @@ You can view all the datasets Arterial has collected in the <Icon icon="layers-2
 
 **Point Datasets** are datasets that refer to a particular point or document on a map—like development and permitting applications. They show up as large circles on the map: each one can be clicked to zoom in directly.
 
-**Polygon Datasets**
+**Polygon Datasets** are datasets that represent areas or zones on a map—such as zoning districts, official plan designations, or neighbourhood boundaries. These appear as colored regions that can be clicked to view their associated information and regulations.
+
+You can control which information is displayed by using the dropdown for the overlaid text in the top left corner of the map interface. This allows you to customize what dataset information is prominently shown as you navigate the map.
 
 ### Filtering
 
@@ -82,3 +84,62 @@ Clicking the <Icon icon="land-plot" color="#FFF" /> **Parcel Mode** button will 
 </Info>
 
 ## Frequently Asked Questions
+
+<AccordionGroup>
+<Accordion title="How often are datasets refreshed?">
+
+All datasets are refreshed on a weekly basis across all supported cities. We have automated systems that collect data from municipal, provincial, and state authorities, ensuring that development applications, zoning changes, and other critical information stays current.
+
+Each dataset update is processed and integrated into our analysis engine automatically—whenever you use Arterial, you can be confident that you're working with the most up-to-date information available.
+
+</Accordion>
+
+<Accordion title="How do I request a new dataset?">
+
+If you have a dataset that you would like to see added to Arterial, you can send us the relevant information and we'll evaluate it for inclusion in our database. We prioritize datasets that provide broad value across multiple projects and jurisdictions.
+
+<Info>
+	To request new datasets or voice support for new features, send an email to
+	[rishi@arterial.design](mailto:rishi@arterial.design) or send Rishi a message
+	on Slack.
+</Info>
+
+</Accordion>
+
+<Accordion title="How do I know if a dataset is accurate?">
+
+All of Arterial's datasets are sourced directly from official municipal and government sources. We maintain data lineage and source attribution for every dataset, which you can view by clicking on individual data points or polygons on the map.
+
+In cases where data may be incomplete or outdated, we'll clearly indicate this in the dataset description and provide information about when the data was last updated.
+
+</Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+	<Card title="Create a Massing" icon="cuboid" href="/essentials/massing">
+		Build 3D visualizations and design your building envelope
+	</Card>
+	<Card
+		title="Export Information"
+		icon="cloud-download"
+		href="/workflows/exporting"
+	>
+		Export your dataset analyses and information in a variety of formats
+	</Card>
+	<Card
+		title="Explore Mode & Parcel Search"
+		icon="search"
+		href="/workflows/parcel-search"
+	>
+		Search for parcels and analyze datasets across different areas
+	</Card>
+	<Card
+		title="Variance Simulation"
+		icon="circle-fading-plus"
+		href="/workflows/upzoning"
+	>
+		Test policy variations and explore development scenarios
+	</Card>
+</CardGroup>
