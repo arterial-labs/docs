@@ -1,10 +1,10 @@
 ---
 title: Entitlement Analysis
 icon: "book-up-2"
-description: "Policy simulations of massings"
+description: "Internal simulations of massings"
 ---
 
-Entitlements in Arterial allow you to quickly compare the as-of-right regulations to your proposed massing, and based on precedence, find the probabiliy of success.
+Entitlements in Arterial allow you to quickly compare the as-of-right regulations to your proposed massing, and based on precedence, find the probability of success.
 
 A specific entitlement is simply a question about a massing that can be linked to policy — each massing has a large set of potential entitlements that can be simulated, and each one is composed of:
 
@@ -58,10 +58,43 @@ If the massing is not AOR compliant, you can use the <Icon icon="search" color="
 
 ## Analyzing Entitlements
 
+Entitlements are complex and are composed of a number of useful characteristics that help determine the likelihood of approval. Each entitlement evaluation considers multiple factors including policy compliance, design guidelines, and historical precedents.
+
 ### Policy Ranges
+
+Policy ranges are essentially a maximum/minimum judgement of what the allowed AOR versions are. For instance, the maximum and minimum height of a building as defined in zoning gives us an initial range to work with.
+
+Arterial will first find the ranges for both design guidelines (influencing typology and built form) and zoning/other legislative policies (which give us a foundation of legal stability). Each entitlement is paired with an architectural component of a massing, allowing us to directly compare the policies to the massing itself. Maximum/minimum ranges are highlighted on the entitlement, and the reasoning and comparison details are under their own respective bolded subheadings.
 
 ### Legislation vs Design Guidelines
 
+We split up entitlements into both zoning and design guidelines because they support different parts of the analysis. Design guidelines are tacit pieces that influence whether or not something will be approved, and zoning is a point-blank issuance of as-of-right ability. Together, they allow us to model out the likelihood of something being approved.
+
+This dual approach provides a comprehensive view of both the legal requirements and the more subjective design considerations that planning departments typically evaluate.
+
 ### Viewing Precedents
 
+In cases where entitlement analysis says that the building cannot be approved AOR, Arterial will help find precedents for your project. We'll display a little overview of the applications found—with the number approved and rejected. To view the precedents, you can click on <Icon icon="search" color="#FFF" /> **View Precedents**.
+
+This precedent analysis helps you understand how similar projects have been evaluated in the past and provides context for the likelihood of your project's approval.
+
 ## Next Steps
+
+<CardGroup cols={2}>
+	<Card
+		title="Export Information"
+		icon="cloud-download"
+		href="/workflows/exporting"
+	>
+		Export your entitlement analyses and datasets in a variety of formats
+	</Card>
+	<Card title="View Policies" icon="book-open" href="/essentials/policies">
+		Explore the underlying zoning and policy frameworks for your project
+	</Card>
+	<Card title="View Precedents" icon="search" href="/workflows/entitlement">
+		Analyze similar development applications and their approval outcomes
+	</Card>
+	<Card title="Configure Layouts" icon="proportions" href="/essentials/layouts">
+		Set up unit arrangements and floor plate designs for your massing
+	</Card>
+</CardGroup>
