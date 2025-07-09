@@ -42,12 +42,16 @@ You can view all the policies Arterial has collected in the <Icon icon="book-ope
 These policy values inform the regulations that Arterial is able to find; for all necessary manual values, we'll provide the maps and information you need to fill out the correct information.
 
 </Step>
-<Step title="Interpretations">
+<Step title="Searching & Interpretations">
 
 <Info>
-	To simulate a project that is not allowed as-of-right, you can use the
-	[variant simulation](/workflows/upzoning) feature to test policies.
+	**Interpretations** allow you to gain a cursory understanding of regulations
+	by asking questions as you would to a planner.
 </Info>
+
+On any policy page, you can use the <Icon icon="search" color="#FFF" /> **Search** button to search for specific policies or regulations. Arterial will find all references nd relevant information and show you a subsection of the extracts that match.
+
+To gain a better understanding of the policy, you can use the <Icon icon="sparkles" color="#FFF" /> **Create Interpretation** button to ask Arterial to interpret the policy for you.
 
 <Frame caption="All details of ">
 	<iframe
@@ -64,16 +68,41 @@ These policy values inform the regulations that Arterial is able to find; for al
 
 ### Arterial's policy algorithm
 
-Arterial
+Arterial uses [Datasets](/essentials/datasets) to find the zoning, official plan, and other policy values relevant to a project. Each of these values is paired with a particular set of regulations (an extract from a page of a piece of legislation or design guideline).
+
+Arterial then resolves every regulation that is referenced or references another one—allowing us to find the full set of regulations faster than any human could, at a level that is computationally verifiable.
+
+### Inspecting extracts
+
+Each regulation on Arterial is composed of a few core pieces, and can be inspected in detail:
+
+- Hovering on regulations allows you to view it in the context of the document
+- Clicking on a section title scrolls to the relevant section in the document
+- Clicking on the chevron to the left of a regulation will collapse/expand it
 
 ### Frequently Asked Questions
 
 <AccordionGroup>
 <Accordion title="How often are policies refreshed?">
 
+All policies are refreshed on a weekly basis across all supported cities. We have servers that ping the relevant municipal, state, and provincial authorities looking for both consolidated bylaws and direct amendments to policies.
+
+Each of these amendments is processed and added to our large data graph on the fly—whenever you use Arterial for simulation, you can be sure that the policies are up-to-date.
+
 </Accordion>
 <Accordion title="How do I add a new policy?">
+
+All of Arterial's policies are refreshed on-the-fly; if you have a policy that you would like to see added, you can send us the relevant information and we'll add it to our database.
+
+<Info>
+To voice support for new features, send an email to [rishi@arterial.design](mailto:rishi@arterial.design) or send Rishi a message on Slack.
+
+</Info>
+
 </Accordion>
 <Accordion title="How do I know if a policy is missing?">
+
+All of Arterial's policies are designed to be self-contained; policies will mathematically never be missing. In certain edge cases, we'll have the most broadly applicable policy used for our own analysis.
+
 </Accordion>
 </AccordionGroup>
