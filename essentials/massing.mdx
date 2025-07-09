@@ -38,9 +38,10 @@ You can select the _type_ of setback using <Icon icon="map-pin" color="#FFF" /> 
 Once all lines are selected, the building envelope will be generated in gray on the map.
 
 </Step>
+
 <Step title="Template Selection">
 
-Arterial has a large selection of pre-defined, customizable massing templates that can be used to speed up your ideation; use the <Icon icon="building" color="#FFF"/> **Select Development Typology** dropdown to chooose one.
+Arterial has a large selection of pre-defined, customizable massing templates that can be used to speed up your ideation; use the <Icon icon="building" color="#FFF"/> **Select Development Typology** dropdown to choose one.
 
 <Info>
 	You can start from scratch by using one of the **General Templates**,
@@ -54,7 +55,7 @@ Once you've selected both, hit <Icon icon="arrow-right" color="#FFF" /> **Contin
 
 <Step title="Unit & Layout Setup">
 
-    Most templates come with pre-defined amenity spaces for internal layout simulation; you'll need to select the unit types that you'd like to use in the <Icon icon="proportions" color="#FFF" /> **Layout** tab.
+Most templates come with pre-defined amenity spaces for internal layout simulation; you'll need to select the unit types that you'd like to use in the <Icon icon="proportions" color="#FFF" /> **Layout** tab.
 
 </Step>
 </Steps>
@@ -63,12 +64,74 @@ Once you've selected both, hit <Icon icon="arrow-right" color="#FFF" /> **Contin
 
 ### Core Constructs
 
+Massing typologies are split into two key parts: storey design and window wells. Each storey has a set of levers attached to it—height and stepbacks. Stepbacks aggregate across floor plates, just as they would in architecture.
+
+You can add window wells afterwards in the <Icon icon="cuboid" color="#FFF" /> **Typology** tab. These are defined by three parameters:
+
+- **Length**: the horizontal extent of the window well
+- **Side depth**: how deep the window well extends into the building
+- **Offset**: the positioning of the window well along the building face
+
+When changing any massing, Arterial will give you the option to save the project to a new copy or the same one. This lets you quickly revert and compare changes between different design iterations.
+
 ### Generative Typologies
 
+Rather than needing to create typologies from scratch, you can also get Arterial to generate certain compliant versions for you by pressing on <Icon icon="sparkles" color="#FFF" /> **Generate**. When prompting, you have two options:
+
+- **Full Generation**: Generate a complete typology by pressing <Icon icon="sparkles" color="#FFF" /> **Generate** after adding your prompt
+- **Augmentation**: Make additions to existing typology by pressing <Icon icon="hammer" color="#FFF" /> **Augment**
+
+This AI-powered approach allows you to quickly explore design variations while maintaining compliance with local regulations and best practices.
+
 ### Highest-and-Best-Use
+
+Arterial can take all the policies, precedents, and planning information in the area to come up with its own version of a highest-and-best-use study. This analysis will take slightly longer than other generative forms, but it will produce the envelope that rests inside the maximum extent of the law.
+
+This feature leverages Arterial's comprehensive understanding of local zoning regulations, building codes, and development precedents to automatically generate the most economically viable building envelope for your site.
 
 ## Templates & Simulations
 
 ### Pre-Defined
 
+Templates are pre-defined massing simulations that come with typologies and layouts. You can add them using the dropdown at the top of the massing sidebar or during setup; all templates are pre-vetted for quality and compliance.
+
+Certain templates—the "Optimal" ones—are intelligent and exist as versions of highest-and-best-use massing based on specific building forms. These templates automatically incorporate local regulations and market conditions to suggest the most viable development approach.
+
 ### Custom
+
+To save your own typology as a template for future use, you can click on the template dropdown and add a name. This allows you to build a library of custom typologies that work well for your specific market conditions or design preferences.
+
+Custom templates maintain all the same functionality as pre-defined templates, including the ability to generate layouts, analyze finances, and export information for further development.
+
+## Next Steps
+
+<CardGroup cols={2}>
+	<Card
+		title="Configure Unit Layouts"
+		icon="proportions"
+		href="/essentials/layout"
+	>
+		Set up floor plate arrangements and unit mixes for your massing
+	</Card>
+	<Card
+		title="Analyze Financial Projections"
+		icon="piggy-bank"
+		href="/essentials/finances"
+	>
+		Assess the economic and financial viability of your massing design
+	</Card>
+	<Card
+		title="Conduct Entitlement Study"
+		icon="book-up-2"
+		href="/essentials/entitlements"
+	>
+		Simulate planning risks and development precedents for your massing
+	</Card>
+	<Card
+		title="Export Information"
+		icon="cloud-download"
+		href="/workflows/exporting"
+	>
+		Export your massing, analyses and datasets in a variety of formats
+	</Card>
+</CardGroup>
