@@ -3,3 +3,43 @@ title: "Precedence Analysis"
 icon: "house-plus"
 description: "Learn to quickly analyze planning rationales and development applications"
 ---
+
+In Arterial, legislative analysis depends on both [Policy](/essentials/policies) and [Entitlements](/essentials/entitlements).
+
+Entitlements allow us to understand how legislation might be changed depending on planning precedents in the area—for each city on Arterial, we have a comprehensive set of tracking systems for development applications streamed directly from cities.
+
+Arterial's datasets combine the public-facing development information with the underlying policy and documentation submitted to City Hall—allowing us to analyze applications in the same way a planner would.
+
+## Quickstart
+
+Precedents can either be automatically generated from an entitlement simulation (see [Entitlement Analysis](/essentials/entitlements)) or manually searched for in a Dataset view (either in a project or in [Explore Mode](/workflows/parcel-search)).
+
+Each city has its own set of development application and permitting datasets that can be searched through—you can select one from the **Precedence** section of the dataset selector.
+
+In the top-right corner of the map, you'll be able to search on applications using the <Icon icon="search" color="#FFF" /> **Search Precedents** button. This will open a modal with a prompt for a set of clauses to filter the rendered applications by.
+
+After searching for a set fo applications and precedents, you can save your search using the <Icon icon="save" color="#FFF" /> **Save Precedence Search** button in the map toolbar. You'll be able to access this search later in the <Icon icon="house-plus" color="#FFF" /> **Precedences** tab in the sidebar.
+
+## Analyzing Precedents
+
+### Planning Rationales
+
+Most development applications will contain legal information encoded in _Planning Rationales_—the arguments developers make to justify their project to the city.
+
+Arterial tracks these under the _Planning Rationale_ key within developmen datasets, and are composed of:
+
+- **Policy References**: the collection of policies that are attempting to be adjusted
+- **Arguments**: the page-by-page arguments based on specific clauses in legislation
+- **Site Context**: the arguments based on site and building context
+
+### Interpretation
+
+Arterial can also combine information across keys and in specific ones to provide a comprehensive interpretation of what a particular rationale means.
+
+In a Dataset view, you can click on the <Icon icon="sparkles" color="#FFF" /> **Interpret** button to generate a short summary of a single rationale:
+
+In Precedence views, you can run ultiple interpretations at once by clicking on each application's checkbox and then clicking the <Icon icon="sparkles" color="#FFF" /> **Interpret** button in the toolbar.
+
+### Project Data Sheets
+
+Arterial also tracks the actual data sheets and architectural plans submitted as part of applications; these are available in the **Project Data Sheets** key (and are exportable - see [Exporting & Sharing](/workflows/exporting)).
